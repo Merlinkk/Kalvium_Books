@@ -1,0 +1,64 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    display:grid;
+    -webkit-mask: conic-gradient(from 15deg,#0000,#000);
+    animation: l26 1s infinite steps(12);
+  }
+  .loader,
+  .loader:before,
+  .loader:after{
+    background:
+      radial-gradient(closest-side at 50% 12.5%,
+       #f03355 96%,#0000) 50% 0/20% 80% repeat-y,
+      radial-gradient(closest-side at 12.5% 50%,
+       #f03355 96%,#0000) 0 50%/80% 20% repeat-x;
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    grid-area: 1/1;
+    transform: rotate(30deg);
+  }
+  .loader:after {
+    transform: rotate(60deg);
+  }
+  
+  @keyframes l26 {
+    100% {transform:rotate(1turn)}
+  }
+
+  #root{
+    height: 100vh;
+  }
+
+
+  /* body {
+	background: linear-gradient(-45deg, #134e5e, #71b280);
+	background-size: 200% 200%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} */
+
+body{
+  /* background-image: linear-gradient(to right bottom, #000000, #2a2029, #423e56, #436488, #248fb1, #29a7c0, #3bbecb, #56d6d4, #75e0dd, #8fe9e6, #a8f3f0, #bffcf9); */
+  /* background-image: linear-gradient(to right top, #ff6f91, #ff81ab, #ff94c3, #ffa6d9, #ffb8eb, #fbbbf0, #f7bdf5, #f3c0fa, #e9b5f7, #deabf4, #d2a1f2, #c598f0); */
+  /* background-image: linear-gradient(to right bottom, #ef3837, #f05249, #f1675a, #f07a6d, #ee8c7f, #ef9a8c, #f0a799, #f0b4a7, #f4c0b3, #f8cdc0, #fbd9ce, #ffe5dc); */
+  /* background-image: linear-gradient(to right bottom, #00c777, #65cf83, #91d793, #b4dfa8, #d0e7c0, #d1e2c0, #d1ddc0, #d0d8c1, #bac4a7, #a3b08d, #8e9d74, #788a5c); */
+  /* background-image: linear-gradient(to top, #000000, #2f1a1f, #5a2d36, #89404b, #bb555e, #d26a79, #e98096, #ff96b3, #fab3d6, #f4ceee, #f4e8fb, #ffffff);
+   */
+   background-image: linear-gradient(to right top, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f7f4fc, #f1e8f8, #eedcf2, #ecbfde, #eda0bf, #eb8297, #e16767);
+}
