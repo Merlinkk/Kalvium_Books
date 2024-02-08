@@ -59,7 +59,7 @@ body{
   /* background-image: linear-gradient(to top, #000000, #2f1a1f, #5a2d36, #89404b, #bb555e, #d26a79, #e98096, #ff96b3, #fab3d6, #f4ceee, #f4e8fb, #ffffff);
    */
    height: auto;
-   overflow: scroll;
+   /* overflow: scroll; */
    background-image: linear-gradient(to right top, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f7f4fc, #f1e8f8, #eedcf2, #ecbfde, #eda0bf, #eb8297, #e16767);
    background-size: contain;
    background-repeat: no-repeat;

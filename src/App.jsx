@@ -4,6 +4,7 @@ import Home from './Pages/Home'
 import Register from './Pages/Register'
 import BookDesc from './Pages/BookDesc'
 import User from './Pages/User'
+import Footer from './components/Footer'
 
 import { useState, useEffect, createContext } from 'react'
 import axios from 'axios'
@@ -34,6 +35,7 @@ function App() {
         <Route path='/user' element={<User />}></Route>
       </Routes>
       </DataContext.Provider>
+      <Footer />
     </>
   )
 }
