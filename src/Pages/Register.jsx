@@ -51,10 +51,10 @@ function Form() {
       <br />
 
       <div className="flex w-full justify-center">
-      <div className="flex mt-40 justify-center items-center my-10 flex-col text-2xl
-        w-fit h-full bg-gray-100 bg-opacity-10 rounded-lg shadow-lg p-10
+      <div className="flex mt-40 justify-center items-center my-10 flex-col md:text-2xl text-lg
+        md:w-fit h-full bg-gray-100 bg-opacity-10 rounded-lg shadow-lg md:p-10 p-5
       ">
-        <h1 className="text-4xl my-10 font-bold bg-gradient-to-r from-purple-300 to-pink-600 bg-clip-text text-transparent ">Registration Form</h1>
+        <h1 className="md:text-4xl text-2xl my-10 font-bold bg-gradient-to-r from-purple-300 to-pink-600 bg-clip-text text-transparent ">Registration Form</h1>
 
           {/* {submit ? (
             <span className="text-lime-500 border-lime-500 border text-center p-2 px-4 my-10">
@@ -68,7 +68,7 @@ function Form() {
         >
           <div className="my-5 relative">
             <input
-              className={`border-gray-300 border-2 p-2 rounded text-base w-96 text-left outline-none ${
+              className={`border-gray-300 border-2 p-2 rounded text-base md:w-96 text-left outline-none ${
                 errors.firstName ? "border-red-500" : null
               } `}
               type="text"
@@ -88,7 +88,7 @@ function Form() {
 
           <div className="my-5 relative">
             <input
-              className={`border-gray-300 border-2 p-2 rounded text-base w-96 text-left outline-none ${
+              className={`border-gray-300 border-2 p-2 rounded text-base md:w-96 text-left outline-none ${
                 errors.email ? "border-red-500" : null
               } `}
               type="email"
@@ -115,7 +115,7 @@ function Form() {
 
           <div className="my-5 relative">
             <input
-              className={`border-gray-300 border-2 p-2 rounded text-base w-96 text-left outline-none ${
+              className={`border-gray-300 border-2 p-2 rounded text-base md:w-96 text-left outline-none ${
                 errors.password ? "border-red-500" : null
               } `}
               type={passwordShown ? "text" : "password"}
@@ -151,7 +151,7 @@ function Form() {
           <div className="my-5 relative">
 
             <input
-              className={`border-gray-300 border-2 p-2 rounded text-base w-96 text-left outline-none ${
+              className={`border-gray-300 border-2 p-2 rounded text-base md:w-96 text-left outline-none ${
                 errors.confirmPassword ? "border-red-500" : null
               } `}
               type={CpasswordShown ? "text" : "password"}

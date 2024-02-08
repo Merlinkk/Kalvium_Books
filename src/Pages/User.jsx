@@ -45,13 +45,13 @@ function User() {
         
         <div className='flex flex-row w-full justify-center'> 
         {!loader && login && 
-            <div className='flex flex-col mt-60 p-10 w-fit justify-center items-center shadow bg-white bg-opacity-10'>
+            <div className='flex flex-col mt-60 md:p-10 p-5 w-fit justify-center items-center shadow bg-white bg-opacity-10'>
                     {isExploding && <ConfettiExplosion force={0.8} duration={3000} particleCount={250} width={1600}/>}
-                    <h1 className='text-4xl text-green-600 m-10 font-bold'>Registration Successful</h1>
-                    <h1 className='text-3xl font-bold my-10'>User Details</h1>
+                    <h1 className='md:text-4xl text-2xl text-green-600 text-center m-10 font-bold'>Registration Successful</h1>
+                    <h1 className='md:text-3xl font-bold my-10'>User Details</h1>
                     <div className='flex flex-col justify-center text-left'>
-                        <span className='text-2xl font-bold'>Name: {formData.name}</span>
-                        <span className='text-2xl font-bold'>Email: {formData.email}</span>
+                        <span className='md:text-2xl font-bold'>Name: {formData.name}</span>
+                        <span className='md:text-2xl font-bold'>Email: {formData.email}</span>
                     </div>
                     <button onClick={()=>{setlogin(false)}} className='bg-purple-500 rounded p-4 my-5'>Logout</button>
                     

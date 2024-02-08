@@ -45,14 +45,14 @@ function Navbar({pathname,back,data,login}) {
 
   return (
     <nav className='flex flex-row z-10 justify-between items-center bg-white bg-opacity-10 backdrop-blur-xl shadow-lg fixed top-0 w-full p-2'>
-        <div className='flex flex-row items-center m-3'>
+        <div className='flex md:flex-row items-center m-3'>
         <Link to={{ pathname: '/', state: { data } }}>
             {back && <ReplyIcon style={{fontSize:'45px'}} className='mt-2 text-red-500' />}
         </Link>
         {!back && <Link to={{ pathname: '/', state: { data } }}>
-            <img className='h-8' src="/Kalvium-Logo.svg" alt="" />
+            <img className='md:h-8 h-5 klv-logo' src="/Kalvium-Logo.svg" alt="" />
         </Link>}
-        {!back && <span className='text-3xl mt-1 ml-2 font-bold text-red-500'>
+        {!back && <span className='md:text-3xl sm:text-2xl mt-1 ml-2 font-bold text-red-500'>
                 Books
             </span>}
         </div>
@@ -91,7 +91,7 @@ function Navbar({pathname,back,data,login}) {
 
         <div className='flex  p-3 flex-row items-center justify-end' >
             <Link to={'/Register'}>
-                <button className={` p-2 shaodw-lg outline-none bg-white hover:bg-opacity-10 bg-opacity-30 transition text-white text-xl rounded px-4 ${login ? 'bg-green-600 bg-opacity-100' : null} `}>{login ? data.name : 'Register'}</button>
+                <button className={` sm:p-2 shaodw-lg outline-none bg-white hover:bg-opacity-10 bg-opacity-30 transition text-white md:text-xl text-lg rounded sm:px-4 p-1 px-2 ${login ? 'bg-green-600 bg-opacity-100' : null} `}>{login ? data.name : 'Register'}</button>
             </Link>
         </div>
 

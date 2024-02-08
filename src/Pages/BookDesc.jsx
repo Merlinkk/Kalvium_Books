@@ -18,7 +18,7 @@ function BookDesc() {
         return book.id === bookId
     }).map((book)=>{
         return (
-    <div key={book.id} className='flex mt-60 flex-row justify-center items-center my-10 mx-8'>
+    <div key={book.id} className='flex mt-60 sm:flex-row flex-col justify-center items-center my-10 mx-8'>
                 <div className='flex p-4 flex-col items-center'>
                 <img src={book.imageLinks.thumbnail} alt="" className='w-64 my-2 h-96'/>
                     <span className='text-2xl w-3/5 text-center font-bold'>{book.title}</span>
@@ -31,7 +31,7 @@ function BookDesc() {
                     <br />
                     <br />
                 </div>
-                    <div className='w-2/5'>
+                    <div className='sm:w-2/5 w-11/12 text-center sm:text-left'>
                         <a href={`${book.previewLink}`} target='_blank'>
                             <button className='mb-4 p-3 bg-green-500 rounded text-white'>
                                 Get Book

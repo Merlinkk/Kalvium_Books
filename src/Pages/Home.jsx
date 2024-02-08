@@ -33,7 +33,7 @@ function Home() {
   
 
   return (
-    <div>
+    <div className=''>
       <Navbar data={formData} login={login}/>
       
       {loader ? <Loader /> : <Books data={books} />}

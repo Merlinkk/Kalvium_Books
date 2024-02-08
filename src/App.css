@@ -29,10 +29,6 @@
     100% {transform:rotate(1turn)}
   }
 
-  #root{
-    height: 100vh;
-  }
-
 
   /* body {
 	background: linear-gradient(-45deg, #134e5e, #71b280);
@@ -53,6 +49,8 @@
 	}
 } */
 
+
+
 body{
   /* background-image: linear-gradient(to right bottom, #000000, #2a2029, #423e56, #436488, #248fb1, #29a7c0, #3bbecb, #56d6d4, #75e0dd, #8fe9e6, #a8f3f0, #bffcf9); */
   /* background-image: linear-gradient(to right top, #ff6f91, #ff81ab, #ff94c3, #ffa6d9, #ffb8eb, #fbbbf0, #f7bdf5, #f3c0fa, #e9b5f7, #deabf4, #d2a1f2, #c598f0); */
@@ -60,5 +58,20 @@ body{
   /* background-image: linear-gradient(to right bottom, #00c777, #65cf83, #91d793, #b4dfa8, #d0e7c0, #d1e2c0, #d1ddc0, #d0d8c1, #bac4a7, #a3b08d, #8e9d74, #788a5c); */
   /* background-image: linear-gradient(to top, #000000, #2f1a1f, #5a2d36, #89404b, #bb555e, #d26a79, #e98096, #ff96b3, #fab3d6, #f4ceee, #f4e8fb, #ffffff);
    */
+   height: auto;
+   overflow: scroll;
    background-image: linear-gradient(to right top, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f7f4fc, #f1e8f8, #eedcf2, #ecbfde, #eda0bf, #eb8297, #e16767);
+   background-size: contain;
+   background-repeat: no-repeat;
+   padding-right: 0;
+   margin: 0;
+}
+
+@media screen and (max-width:500px) {
+  nav > div{
+    flex-direction: column;
+  }
+  .klv-logo{
+    height: 20px;
+  }
 }
