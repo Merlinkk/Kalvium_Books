@@ -45,7 +45,7 @@ function User() {
         
         <div className='flex flex-row w-full justify-center'> 
         {!loader && login && 
-            <div className='flex flex-col mt-60 md:p-10 p-5 w-fit justify-center items-center shadow bg-white bg-opacity-10'>
+            <div className='flex flex-col mt-60 mb-28 md:p-10 p-5 w-fit justify-center items-center shadow bg-white bg-opacity-10'>
                     {isExploding && <ConfettiExplosion force={0.8} duration={3000} particleCount={250} width={1600}/>}
                     <h1 className='md:text-4xl text-2xl text-green-600 text-center m-10 font-bold'>Registration Successful</h1>
                     <h1 className='md:text-3xl font-bold my-10'>User Details</h1>
