@@ -77,7 +77,7 @@ function Navbar({pathname,back,data,login}) {
         {state === '' ? null : 
         dropDownVisibility ? 
         <ul style={{listStyle: 'none',}}>
-        {filtered ? filtered.map((elem)=>{
+        {filtered && filtered.length > 0 ? filtered.map((elem)=>{
             return<li className=' cursor-pointer hover:bg-red-400 hover:text-white p-5' onClick={() => {navigate(`/${elem.id}`); setDropDownVisibility(false)}} key={elem.id}>
             {elem.title}
           </li>
