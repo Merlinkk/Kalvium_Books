@@ -176,7 +176,7 @@ function Form() {
           </div>
 
           <button className="my-10 bg-gradient-to-tr from-pink-50 to-pink-100 hover:from-pink-300 hover:to-pink-700 hover:text-white text-red-700 transition  p-3 rounded-xl" id="submit">
-            Submit
+            Sign up
           </button>
 
         </form>
