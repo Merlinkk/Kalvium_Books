@@ -69,19 +69,29 @@ function Form() {
           <div className="my-5 relative">
             <input
               className={`border-gray-300 border-2 p-2 rounded text-base md:w-96 text-left outline-none ${
-                errors.firstName ? "border-red-500" : null
+                errors.name ? "border-red-500" : null
               } `}
               type="text"
               placeholder="Name"
-              {...register("name", { required: "Name" })}
+              {...register("name", { 
+                required: "Name is required",
+                minLength: {
+                  value: 3,
+                  message: "Name must at least be 3 characters long",
+                }, 
+                maxLength: {
+                  value: 30,
+                  message: "Name must at most be 30 characters long",
+                }, 
+              })}
             />
             <div className="absolute right-1 top-1">
               <PersonOutlineIcon />
             </div>
-            {errors.firstName ? (
+            {errors.name ? (
               <p className="text-sm m-0 p-0 ml-1 italic text-red-500">
                 <ErrorIcon className="text-red-400" />
-                {errors.firstName?.message}
+                {errors.name?.message}
               </p>
             ) : null}
           </div>
@@ -94,7 +104,7 @@ function Form() {
               type="email"
               placeholder="Email"
               {...register("email", {
-                required: "Email  ",
+                required: "Email is required ",
                 pattern: {
                   value: /^\S+@\S+$/i,
                   message: "Invalid email address",
@@ -127,13 +137,13 @@ function Form() {
               },
                 required: "Password is required",
                 minLength: {
-                  value: 4,
-                  message: "Password must be more than 4 characters",
+                  value: 9,
+                  message: "Password must be at least 10 characters",
                 },
-                maxLength: {
-                  value: 20,
-                  message: "Password cannot be more than 20 characters",
-                },
+                // maxLength: {
+                //   value: 20,
+                //   message: "Password cannot be more than 20 characters",
+                // },
               })}
             />
             <div className="absolute cursor-pointer right-1 top-1">
