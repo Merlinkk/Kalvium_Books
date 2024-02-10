@@ -174,7 +174,7 @@ function Form() {
             />
 
             <div className="absolute cursor-pointer right-1 top-1">
-              {passwordShown ? <VisibilityOffIcon onClick={toggleCPassword} /> : <VisibilityIcon onClick={toggleCPassword} /> }
+              {CpasswordShown ? <VisibilityOffIcon onClick={toggleCPassword} /> : <VisibilityIcon onClick={toggleCPassword} /> }
             </div>
 
             {errors.confirmPassword ? (
